@@ -2,9 +2,17 @@ const express = require("express");
 const connectDB = require("./Config/db");
 const path = require("path");
 const app = express();
+const cors = require("cors");
+
+app.use(cors());
+
 const collegeRoutes = require("./Routes/College");
+const studentRoutes = require("./Routes/Student");
+
 connectDB();
 app.use("/api/College", collegeRoutes);
+app.use("/api/Student", studentRoutes);
+
 app.use(express.json({ extended: false }));
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static("frontend/build"));

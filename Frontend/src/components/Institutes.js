@@ -3,103 +3,164 @@ import React, { Component } from "react";
 import { PieChart } from "react-minimal-pie-chart";
 import styles from "../css/Institutes.module.css";
 import "antd/dist/antd.css";
+import { getClgByState, getClgByCourse } from "./backendApis";
 
 class Institutes extends Component {
 	state = {
 		visible: false,
+		visible2: false,
+		data: [],
+		courses: [],
+		colors: ["#ff80df", "#1aff8c", "#5353c6", "#ffff1a", "#00a3cc", "#ffb3b3"],
+		colors2: ["#ff4d4d", "#ffff99", "#4dffff", "#b3b3ff", "#80ff80", "#ffaa80"],
+		currentState: -1,
+		currentCourse: -1,
 	};
+
+	componentDidMount() {
+		getClgByState()
+			.then((response) => {
+				console.log(response);
+				response.forEach((ele, index) => {
+					ele.color = this.state.colors[index % 6];
+					ele.value = parseInt(ele.value);
+				});
+				this.setState({ data: response });
+			})
+			.catch((err) => console.log(err));
+		getClgByCourse()
+			.then((response) => {
+				console.log(response);
+				response.forEach((ele, index) => {
+					ele.color = this.state.colors2[index % 6];
+					ele.value = parseInt(ele.value);
+				});
+				this.setState({ courses: response });
+			})
+			.catch((err) => console.log(err));
+	}
 	handleOk = () => {
 		this.setState({ visible: false });
 	};
 	handleCancel = () => {
 		this.setState({ visible: false });
 	};
+	handleOk2 = () => {
+		this.setState({ visible2: false });
+	};
+	handleCancel2 = () => {
+		this.setState({ visible2: false });
+	};
 	render() {
+		let clgs = [];
+		if (this.state.currentState >= 0) {
+			this.state.data[this.state.currentState].colleges.forEach((ele) => {
+				clgs.push(
+					<p
+						style={{ cursor: "pointer" }}
+						onClick={() => (window.location = `/institute/${ele._id}`)}
+					>
+						{ele.Name}
+					</p>
+				);
+			});
+		}
+		let clgs2 = [];
+		if (this.state.currentCourse >= 0) {
+			this.state.courses[this.state.currentCourse].colleges.forEach((ele) => {
+				clgs2.push(
+					<p
+						style={{ cursor: "pointer" }}
+						onClick={() => (window.location = `/institute/${ele._id}`)}
+					>
+						{ele.Name}
+					</p>
+				);
+			});
+		}
 		return (
 			<div className={styles.pieCharts}>
 				<div className={styles.colleges}>
 					<h1>
-						Pie Chart of colleges in each state(hover over a segment to know
-						which state that segment represents)
+						{`Pie Chart of colleges in each state(${
+							window.innerWidth > 500 ? "hover over" : "click on"
+						} a segment to know
+						which state that segment represents)`}
 					</h1>
-					<PieChart
-						data={[
-							{ title: "Andhra Pradesh", value: 10, color: "#E38627", key: 10 },
-							{ title: "Tamil Nadu", value: 15, color: "#C13C37" },
-							{ title: "Karnataka", value: 20, color: "#6A2135" },
-							{ title: "Assam", value: 1, color: "blue" },
-							{ title: "Maharashtra", value: 27, color: "orange" },
-							{ title: "Utthar Pradesh", value: 31, color: "lightgreen" },
-						]}
-						animate
-						animationDuration={2000}
-						onClick={() => (window.location = "/institute/1")}
-						// onClick={() => this.setState({ visible: true })}
-						style={{ cursor: "pointer", width: "70%", margin: "40px auto" }}
-						lineWidth={50}
-						label={({ dataEntry }) =>
-							dataEntry.value >= 5 ? `${Math.round(dataEntry.value)} %` : ""
-						}
-						labelPosition={75}
-						labelStyle={{ fontSize: "0.3vw", fontFamily: "Georgia" }}
-					/>
+					{this.state.data.length > 0 && (
+						<PieChart
+							data={this.state.data}
+							animate
+							animationDuration={2000}
+							onClick={(e, segmentIndex) => {
+								console.log(segmentIndex);
+								this.setState({ visible: true, currentState: segmentIndex });
+							}}
+							style={{ cursor: "pointer", width: "70%", margin: "40px auto" }}
+							lineWidth={50}
+							label={({ dataEntry }) =>
+								dataEntry.value >= 5 ? `${Math.round(dataEntry.value)} %` : ""
+							}
+							labelPosition={75}
+							labelStyle={{
+								fontSize: window.innerWidth > 500 ? "0.3vw" : "1vw",
+								fontFamily: "Georgia",
+							}}
+						/>
+					)}
 				</div>
 				<div className={styles.courses}>
-					<PieChart
-						data={[
-							{
-								title: "Computer Science Engineering",
-								value: 60,
-								color: "#E38627",
-							},
-							{ title: "Civil Engineering", value: 28, color: "#C13C37" },
-							{
-								title: "Electrical and Electronics Engineering",
-								value: 27,
-								color: "#6A2135",
-							},
-							{
-								title: "Electrical and Communications Engineering",
-								value: 31,
-								color: "purple",
-							},
-							{
-								title: "Metallurgical Engineering",
-								value: 15,
-								color: "orange",
-							},
-							{
-								title: "Biotechnology Engineering",
-								value: 10,
-								color: "lightgreen",
-							},
-						]}
-						animate
-						animationDuration={2000}
-						onClick={() => this.setState({ visible: true })}
-						style={{ cursor: "pointer", width: "60%", margin: "40px auto" }}
-						lineWidth={50}
-						label={({ dataEntry }) =>
-							dataEntry.value >= 5 ? `${Math.round(dataEntry.value)} %` : ""
-						}
-						labelPosition={75}
-						labelStyle={{ fontSize: "0.3vw", fontFamily: "Georgia" }}
-					/>
+					{this.state.courses.length > 0 && (
+						<PieChart
+							data={this.state.courses}
+							animate
+							animationDuration={2000}
+							onClick={(e, segmentIndex) =>
+								this.setState({ visible2: true, currentCourse: segmentIndex })
+							}
+							style={{ cursor: "pointer", width: "60%", margin: "40px auto" }}
+							lineWidth={50}
+							label={({ dataEntry }) =>
+								dataEntry.value >= 5 ? `${Math.round(dataEntry.value)} %` : ""
+							}
+							labelPosition={75}
+							labelStyle={{
+								fontSize: window.innerWidth > 500 ? "0.3vw" : "1vw",
+								fontFamily: "Georgia",
+							}}
+						/>
+					)}
 					<h1>
-						Course Popularity among colleges(hover over a segment to know which
-						course that segment represents)
+						{`Course Popularity among colleges(${
+							window.innerWidth > 500 ? "hover over" : "click on"
+						} a segment to know which
+						course that segment represents)`}
 					</h1>
 				</div>
-				<Modal
-					title="List of colleges"
-					visible={this.state.visible}
-					onOk={this.handleOk}
-					onCancel={this.handleCancel}
-				>
-					<p>Some contents...</p>
-					<p>Some contents...</p>
-					<p>Some contents...</p>
-				</Modal>
+				{this.state.currentState >= 0 && (
+					<Modal
+						title={`List of colleges in ${
+							this.state.data[this.state.currentState].title
+						}`}
+						visible={this.state.visible}
+						onOk={this.handleOk}
+						onCancel={this.handleCancel}
+					>
+						{clgs}
+					</Modal>
+				)}
+				{this.state.currentCourse >= 0 && (
+					<Modal
+						title={`List of colleges which have ${
+							this.state.courses[this.state.currentCourse].title
+						}`}
+						visible={this.state.visible2}
+						onOk={this.handleOk2}
+						onCancel={this.handleCancel2}
+					>
+						{clgs2}
+					</Modal>
+				)}
 			</div>
 		);
 	}

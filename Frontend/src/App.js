@@ -12,7 +12,7 @@ function App() {
 			<Route exact path="/" component={homePage} />
 			<Route path="/institutes" component={Institutes} />
 			<Route path="/students" component={Students} />
-			<Route path="/institute/1" component={Institute} />
+			<Route path="/institute/:id" component={Institute} />
 		</Switch>
 	);
 	return (

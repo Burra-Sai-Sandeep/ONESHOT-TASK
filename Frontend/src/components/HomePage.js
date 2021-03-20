@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../css/HomePage.module.css";
 import institutes from "../assets/institutes.svg";
-import students from "../assets/students.svg";
+import trends from "../assets/trends.svg";
 import { Button } from "antd";
 
 const homePage = () => (
@@ -9,7 +9,7 @@ const homePage = () => (
 		<div className={styles.home}>
 			<div className={styles.institutes}>
 				<div>
-					<h1>Browse through institutes</h1>
+					<h1>Browse through colleges</h1>
 					<h2 style={{ color: "#4141ac" }}>
 						Browse through various colleges across countries which will help you
 						decide what suits you best !!!
@@ -23,30 +23,27 @@ const homePage = () => (
 						type="primary"
 						onClick={() => (window.location = "/institutes")}
 					>
-						BROWSE COLLEGES
+						LIST OF COLLEGES
 					</Button>
-					{/* <button onClick={() => (window.location = "/institutes")}>
-						Browse
-					</button> */}
 				</div>
 			</div>
 			<div className={styles.students}>
 				<div>
 					<img
-						src={students}
+						src={trends}
 						alt=""
 						style={{ width: "80%", margin: "60px auto" }}
 					/>
 					<Button
 						type="primary"
-						onClick={() => (window.location = "/students")}
+						onClick={() => (window.location = "/institutes")}
 					>
 						KNOW MORE
 					</Button>
-					<h1 style={{ color: "#4141ac" }}>Know your to be fellow students</h1>
+					<h1 style={{ color: "#4141ac" }}>Check out college statistics</h1>
 					<h2>
-						Get to know the study environment you will get and also the kind of
-						peer students before you make a decision !!!
+						Take a look at the college statistics by state and by course and
+						thereby make an informed decision on where to join !!!
 					</h2>
 					{/* <button onClick={() => (window.location = "/students")}>
 						Know more

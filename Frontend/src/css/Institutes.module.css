@@ -11,7 +11,7 @@
 }
 
 .colleges > h1 {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: "Nunito", sans-serif;
 }
 
 .courses {
@@ -22,5 +22,24 @@
 }
 
 .courses > h1 {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: "Nunito", sans-serif;
+}
+
+@media (max-width: 500px) {
+	.pieCharts {
+		flex-direction: column;
+	}
+	.colleges {
+		width: 100%;
+		flex-direction: column-reverse;
+	}
+	.colleges > h1 {
+		font-size: 5vw !important;
+	}
+	.courses {
+		width: 100%;
+	}
+	.courses > h1 {
+		font-size: 5vw !important;
+	}
 }

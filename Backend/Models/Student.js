@@ -9,9 +9,11 @@ const StudentSchema = new mongoose.Schema({
 	Year_batch: {
 		type: String,
 	},
-	user: {
-		type: Schema.Types.ObjectId,
-		ref: "college",
+	College_Id: {
+		type: String,
+	},
+	College_Name: {
+		type: String,
 	},
 	Skills: {
 		type: [String],
