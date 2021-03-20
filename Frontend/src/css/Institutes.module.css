@@ -1,0 +1,26 @@
+.pieCharts {
+	display: flex;
+	flex-direction: row;
+}
+
+.colleges {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.colleges > h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.courses {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.courses > h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}

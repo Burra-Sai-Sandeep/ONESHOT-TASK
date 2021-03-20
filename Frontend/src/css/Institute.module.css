@@ -1,0 +1,21 @@
+.collegeCard {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 60px auto;
+	border-radius: 25px;
+}
+
+.collegeCard > div:nth-child(1) {
+	background-color: lightgreen;
+	height: 50%;
+}
+
+.collegeCard > div:nth-child(2) {
+	background-color: black;
+	color: white;
+	height: 50%;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 2vw;
+}

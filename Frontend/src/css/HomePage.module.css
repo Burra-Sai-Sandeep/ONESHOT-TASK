@@ -1,0 +1,95 @@
+.home {
+	display: flex;
+	flex-direction: row;
+	background-image: linear-gradient(to right, lightblue, lightgreen);
+	width: 95%;
+	margin: auto;
+	border-radius: 25px;
+}
+
+.institutes {
+	/* background-color: lightpink; */
+	width: 50%;
+	margin: 60px auto;
+}
+
+.institutes > div {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.institutes > div > button {
+	background-color: lightgreen;
+	color: black;
+	height: 50px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: large;
+}
+
+.institutes > div > button:hover {
+	background-color: white;
+	border-color: black;
+	color: black;
+}
+
+.institutes > div > h1 {
+	font-size: 3.5vw;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.students {
+	/* background-color: lightgreen; */
+	width: 50%;
+	margin: 60px auto;
+}
+
+.students > div {
+	width: 90%;
+	margin: 5% auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.students > div > h1 {
+	font-size: 3.5vw;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.students > div > button {
+	background-color: lightblue;
+	color: black;
+	height: 50px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: large;
+}
+
+.students > div > button:hover {
+	background-color: white;
+	border-color: black;
+	color: black;
+}
+
+@media (max-width: 500px) {
+	.home {
+		flex-direction: column;
+		background-image: linear-gradient(to bottom, lightpink, lightgreen);
+	}
+	.institutes {
+		width: 100%;
+		margin: 40px auto;
+	}
+	.students {
+		width: 100%;
+		margin: 40px auto;
+	}
+	.institutes > div > h1 {
+		font-size: 7vw;
+	}
+	.students > div > h1 {
+		font-size: 7vw;
+	}
+}

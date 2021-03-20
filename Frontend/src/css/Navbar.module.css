@@ -1,0 +1,25 @@
+.navbar {
+	height: 100px;
+	text-align: center;
+	/* background-color: aqua; */
+	font-family: "pangolin";
+	font-size: 2.25vw;
+	/* border-bottom: 2px solid grey; */
+	background-image: linear-gradient(to right, lightgreen, lightblue);
+}
+
+.logo {
+	cursor: pointer;
+	width: max-content;
+	margin: auto;
+	/* background: -webkit-linear-gradient(lightpink, lightgreen);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+}
+
+@media (max-width: 500px) {
+	.navbar {
+		font-size: 6vw;
+		height: 80px;
+	}
+}
