@@ -1,0 +1,13 @@
+[
+	{
+		"Courses": ["Computer Science Engineering"],
+		"Name": "IIIT Hyderabad",
+		"Year_Founded": "2001",
+		"City": "Hyderabad",
+		"State": "Telangana",
+		"Country": "India",
+		"Students_Count": 1700,
+		"College_Id": 1,
+		"_v": 0
+	}
+]
