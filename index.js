@@ -15,9 +15,9 @@ app.use("/api/Student", studentRoutes);
 
 app.use(express.json({ extended: false }));
 if (process.env.NODE_ENV === "production") {
-	app.use(express.static("Frontend/build"));
+	app.use(express.static("frontend/build"));
 	app.get("*", (req, res) => {
-		res.sendFile(path.resolve(__dirname, "Frontend", "build", "index.html"));
+		res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 	});
 }
 
