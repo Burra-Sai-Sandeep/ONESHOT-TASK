@@ -1,30 +1,9 @@
 const College = require("../Models/College");
 const { sortByCountry } = require("../Helpers/Sorts");
-
+const data = require("../data.json");
 exports.create = async (req, res) => {
 	try {
-		const newCollege = College({
-			Name: "NIT Durgapur",
-			Year_Founded: "1999",
-			City: "Durgapur",
-			State: "West Bengal",
-			Country: "India",
-			Students_Count: 4600,
-			College_Id: 25,
-			Courses: [
-				"Computer Science Engineering",
-				"Electronics and Communications Engineering",
-				"Civil Engineering",
-				"Electrical and Electronics Engineering",
-				"Chemical Engineering",
-				"Mechanincal Engineering",
-				"Information Technology",
-				"Metallurgical Engineering",
-				"Biotechnology Engineering",
-				"Computer Science Engineering(Dual)",
-				"Aerospace Engineering",
-			],
-		});
+		const newCollege = College(data[0]);
 		const check = await newCollege.save();
 		return res.status(200).json(check);
 	} catch (error) {

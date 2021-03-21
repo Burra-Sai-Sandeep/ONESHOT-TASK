@@ -1,10 +1,8 @@
 .navbar {
 	height: 100px;
 	text-align: center;
-	/* background-color: aqua; */
-	font-family: "pangolin";
+	font-family: "Ubuntu", sans-serif;
 	font-size: 2.25vw;
-	/* border-bottom: 2px solid grey; */
 	background-image: linear-gradient(to right, lightgreen, lightblue);
 }
 

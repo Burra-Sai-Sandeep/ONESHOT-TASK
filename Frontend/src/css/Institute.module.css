@@ -7,8 +7,9 @@
 }
 
 .collegeCard > div:nth-child(1) {
-	background-color: lightgreen;
+	background-color: black;
 	height: 50%;
+	border-radius: 20px 20px 0 0;
 }
 
 .collegeCard > div:nth-child(2) {
@@ -18,6 +19,7 @@
 	text-align: center;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 2vw;
+	border-radius: 0 0 20px 20px;
 }
 
 .studentsTitle {
@@ -30,18 +32,37 @@
 	font-size: 3vw;
 }
 
+.portfolioCard {
+	display: flex;
+	flex-direction: row;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+}
+
+.portfolioImg {
+	width: 40%;
+	padding: 10%;
+	background-image: linear-gradient(to right, #ff3333, orange);
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolioImg > div {
+	font-size: 1vw;
+}
+
 .portfolio {
-	width: 50%;
+	width: 60%;
 	text-align: center;
-	padding: 10% 0;
-	background-color: lightgreen;
-	border-left: 2px solid black;
-	border-radius: 0 25px 25px 0;
+	padding: 10% 5%;
+	/* background-color: lightgreen; */
+	/* border-left: 2px solid black; */
+	/* border-radius: 0 25px 25px 0; */
 }
 
 .portfolio > p {
 	font-family: "Nutito", sans-serif;
-	font-size: 2vw;
+	font-size: 1vw;
 }
 
 @media (max-width: 500px) {
@@ -54,5 +75,8 @@
 	.studentsTitle,
 	.similarTitle {
 		font-size: 5vw;
+	}
+	.portfolio > p {
+		font-size: 3vw;
 	}
 }

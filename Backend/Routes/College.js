@@ -8,7 +8,7 @@ const {
 	getColleges,
 } = require("../Controllers/College");
 const router = express.Router();
-router.post("/create", create);
+// router.post("/create", create);
 router.get("/", getColleges);
 router.get("/Id/:id", getCollegeByNameOrId);
 router.get("/name/:name", getCollegeByNameOrId);

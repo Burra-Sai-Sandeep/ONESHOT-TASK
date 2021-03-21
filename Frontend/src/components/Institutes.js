@@ -141,7 +141,7 @@ class Institutes extends Component {
 					<Modal
 						title={`List of colleges in ${
 							this.state.data[this.state.currentState].title
-						}`}
+						}(${this.state.data[this.state.currentState].value}%)`}
 						visible={this.state.visible}
 						onOk={this.handleOk}
 						onCancel={this.handleCancel}
@@ -153,7 +153,7 @@ class Institutes extends Component {
 					<Modal
 						title={`List of colleges which have ${
 							this.state.courses[this.state.currentCourse].title
-						}`}
+						}(${this.state.courses[this.state.currentCourse].value}%)`}
 						visible={this.state.visible2}
 						onOk={this.handleOk2}
 						onCancel={this.handleCancel2}

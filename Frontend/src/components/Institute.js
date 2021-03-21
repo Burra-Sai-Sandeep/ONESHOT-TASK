@@ -18,16 +18,15 @@ class Institute extends Component {
 		const clgId = this.props.match.params.id;
 		getSimilarClgs(clgId)
 			.then((response) => {
+				response.length = 10;
 				this.setState({ data: response });
 			})
 			.catch((err) => console.log(err));
 		getDetailsByClgId(clgId)
 			.then((response) => {
-				console.log(response);
 				this.setState({ clgData: response });
 				getStudents(response.College_Id)
 					.then((res) => {
-						console.log(res);
 						this.setState({ studentData: res });
 					})
 					.catch((err) => console.log(err));
@@ -146,9 +145,7 @@ class Institute extends Component {
 					;
 				</div>
 				<div style={{ textAlign: "center" }}>
-					<div className={styles.similarTitle}>
-						Similar colleges in decreasing order of similarity
-					</div>
+					<div className={styles.similarTitle}>Similar colleges</div>
 					<Table
 						key="colleges"
 						scroll={{ x: 400 }}
@@ -158,6 +155,13 @@ class Institute extends Component {
 							width: window.innerWidth > 500 ? "80%" : "90%",
 							margin: "auto",
 							cursor: "pointer",
+						}}
+						onRow={(record, rowIndex) => {
+							return {
+								onClick: (event) => {
+									window.location = `/institute/${this.state.data[rowIndex]._id}`;
+								},
+							};
 						}}
 					/>
 				</div>
@@ -169,36 +173,40 @@ class Institute extends Component {
 						visible={this.state.visible}
 						onOk={this.handleOk}
 						onCancel={this.handleCancel}
-						width="fit-content"
+						// width={400}
 					>
-						<div
-							style={{
-								display: "flex",
-								flexDirection: "row",
-								border: "2px solid black",
-								borderRadius: 25,
-							}}
-						>
-							<div style={{ width: "50%", padding: "10%" }}>
+						<div className={styles.portfolioCard}>
+							<div className={styles.portfolioImg}>
 								<img
 									src={portfolio}
 									alt=""
 									style={{
-										width: "70%",
-										height: "80%",
+										width: "90%",
+										height: "90%",
+										// height: "80%",
 										margin: "auto",
 										padding: "auto",
 									}}
 								/>
+								{/* <div>{`Batch of ${
+									this.state.studentData[this.state.studentIndex].Year_batch
+								}`}</div> */}
 							</div>
 							<div className={styles.portfolio}>
-								<p>{`Name: ${
-									this.state.studentData[this.state.studentIndex].Name
-								}`}</p>
-								<p>{`Batch: ${
-									this.state.studentData[this.state.studentIndex].Year_batch
-								}`}</p>
-								<p>{`Skills: ${skills}`}</p>
+								<p>
+									{<b>Name: </b>}
+									{`${this.state.studentData[this.state.studentIndex].Name}`}
+								</p>
+								<p>
+									{<b>Batch: </b>}
+									{`${
+										this.state.studentData[this.state.studentIndex].Year_batch
+									}`}
+								</p>
+								<p>
+									{<b>Skills: </b>}
+									{`${skills}`}
+								</p>
 							</div>
 						</div>
 					</Modal>
