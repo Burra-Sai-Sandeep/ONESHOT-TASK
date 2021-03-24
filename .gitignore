@@ -3,3 +3,4 @@
 .vscode/
 frontend/node_modules
 config/default.json
+data.json

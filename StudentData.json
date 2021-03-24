@@ -1,0 +1,579 @@
+[
+    {
+        "StudentId": 3,
+		"Name": "Sandeep",
+		"Year_batch": "2017",
+		"College_Id": 3,
+		"College_Name": "ABV-IIITM",
+		"Skills": ["Web Development", "Sports", "Javascript"],
+		"_v": 0
+	},
+    {
+        "StudentId": 6,
+		"Name": "Vishnu",
+		"Year_batch": "2017",
+		"College_Id": 3,
+		"College_Name": "ABV-IIITM",
+		"Skills": [ "Sports", "Game development"],
+		"_v": 0
+	},
+    {
+        "StudentId": 7,
+		"Name": "Krishna Prasad",
+		"Year_batch": "2019",
+		"College_Id": 3,
+		"College_Name": "ABV-IIITM",
+		"Skills": ["Oratory excellence", "Extracurricular activities", "Javascript"],
+		"_v": 0
+	},
+    {
+        "StudentId": 8,
+		"Name": "Shashank",
+		"Year_batch": "2019",
+		"College_Id": 3,
+		"College_Name": "ABV-IIITM",
+		"Skills": ["Dance", "Sports", "C++"],
+		"_v": 0
+	},
+    {
+        "StudentId": 9,
+		"Name": "Saksham",
+		"Year_batch": "2017",
+		"College_Id": 3,
+		"College_Name": "ABV-IIITM",
+		"Skills": ["Machine Learning", "Sports", "Management"],
+		"_v": 0
+	},
+    {
+        "StudentId": 10,
+		"Name": "Dinesh",
+		"Year_batch": "2017",
+		"College_Id": 3,
+		"College_Name": "ABV-IIITM",
+		"Skills": ["Deep Learning", "Table Tennis", "C++"],
+		"_v": 0
+	},
+    {
+        "StudentId": 11,
+		"Name": "Kalyan",
+		"Year_batch": "2017",
+		"College_Id": 2,
+		"College_Name": "IIIT Bangalore",
+		"Skills": ["Machine Learning", "Photoshop", "C++"],
+		"_v": 0
+	},
+    {
+        "StudentId": 12,
+		"Name": "Jagadeesh",
+		"Year_batch": "2016",
+		"College_Id": 2,
+		"College_Name": "IIIT Bangalore",
+		"Skills": ["Machine Learning", "Photoshop", "C++","Acting"],
+		"_v": 0
+	},
+    {
+        "StudentId": 13,
+		"Name": "Swarup",
+		"Year_batch": "2015",
+		"College_Id": 2,
+		"College_Name": "IIIT Bangalore",
+		"Skills": ["Development", "English", "C++"],
+		"_v": 0
+	},
+    {
+        "StudentId": 14,
+		"Name": "Abhinav",
+		"Year_batch": "2014",
+		"College_Id": 2,
+		"College_Name": "IIIT Bangalore",
+		"Skills": ["Machine Learning", "Photoshop", "C++"],
+		"_v": 0
+	},
+    {
+        "StudentId": 15,
+		"Name": "Surya",
+		"Year_batch": "2014",
+		"College_Id": 2,
+		"College_Name": "IIIT Bangalore",
+		"Skills": ["Sports", "Photoshop", "Cryptography"],
+		"_v": 0
+	},
+    {
+        "StudentId": 16,
+		"Name": "Srinivas",
+		"Year_batch": "2017",
+		"College_Id": 2,
+		"College_Name": "IIIT Bangalore",
+		"Skills": ["Machine Learning","Development", "Photoshop", "C++"],
+		"_v": 0
+	},
+    {
+        "StudentId": 17,
+		"Name": "Kathi Pranathi",
+		"Year_batch": "2016",
+		"College_Id": 2,
+		"College_Name": "IIIT Bangalore",
+		"Skills": ["Machine Learning","Python", "Photoshop", "C++"],
+		"_v": 0
+	},
+    {
+        "StudentId": 18,
+		"Name": "Srikar",
+		"Year_batch": "2016",
+		"College_Id": 2,
+		"College_Name": "IIIT Bangalore",
+		"Skills": ["Management", "Leadership", "Tally"],
+		"_v": 0
+	},
+    {
+        "StudentId": 19,
+		"Name": "Pranay",
+		"Year_batch": "2017",
+		"College_Id": 2,
+		"College_Name": "IIIT Bangalore",
+		"Skills": ["Android Development", "Photoshop", "C++"],
+		"_v": 0
+	},
+    {
+        "StudentId": 20,
+		"Name": "Bhushan",
+		"Year_batch": "2013",
+		"College_Id": 4,
+		"College_Name": "IIIT Allahabad",
+		"Skills": ["Gaming", "Photoshop", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 21,
+		"Name": "Sravan",
+		"Year_batch": "2018",
+		"College_Id": 4,
+		"College_Name": "IIIT Allahabad",
+		"Skills": ["Machine Learning", "Python", "Leadership"],
+		"_v": 0
+	},
+    {
+        "StudentId": 22,
+		"Name": "Manoj",
+		"Year_batch": "2018",
+		"College_Id": 4,
+		"College_Name": "IIIT Allahabad",
+		"Skills": ["Gaming", "Management", "Leadership"],
+		"_v": 0
+	},
+    {
+        "StudentId": 23,
+		"Name": "K Manoj",
+		"Year_batch": "2018",
+		"College_Id": 4,
+		"College_Name": "IIIT Allahabad",
+		"Skills": ["Python", "C++", "Java","Sports"],
+		"_v": 0
+	},
+    {
+        "StudentId": 24,
+		"Name": "Praveen",
+		"Year_batch": "2015",
+		"College_Id": 4,
+		"College_Name": "IIIT Allahabad",
+		"Skills": ["Gaming", "Sports", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 25,
+		"Name": "Rucha",
+		"Year_batch": "2017",
+		"College_Id": 4,
+		"College_Name": "IIIT Allahabad",
+		"Skills": ["Sports", "Management", "C++"],
+		"_v": 0
+	},
+    {
+        "StudentId": 26,
+		"Name": "Vinay",
+		"Year_batch": "2017",
+		"College_Id": 4,
+		"College_Name": "IIIT Allahabad",
+		"Skills": ["Gaming", "C++", "Python"],
+		"_v": 0
+	},
+    {
+        "StudentId": 27,
+		"Name": "Deepak",
+		"Year_batch": "2016",
+		"College_Id": 4,
+		"College_Name": "IIIT Allahabad",
+		"Skills": ["Gaming", "Sports", "C++","Development"],
+		"_v": 0
+	},
+    {
+        "StudentId": 28,
+		"Name": "Abhilash",
+		"Year_batch": "2018",
+		"College_Id": 5,
+		"College_Name": "IIITDM Jabalpur",
+		"Skills": ["Gaming", "Management", "Java","Oratory skills"],
+		"_v": 0
+	},
+    {
+        "StudentId": 29,
+		"Name": "Shashwath",
+		"Year_batch": "2012",
+		"College_Id": 5,
+		"College_Name": "IIITDM Jabalpur",
+		"Skills": ["Gaming", "Management", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 30,
+		"Name": "Shubhakanth",
+		"Year_batch": "2019",
+		"College_Id": 5,
+		"College_Name": "IIITDM Jabalpur",
+		"Skills": ["Gaming",  "Java","Oratory skills"],
+		"_v": 0
+	},
+    {
+        "StudentId": 31,
+		"Name": "Behra",
+		"Year_batch": "2020",
+		"College_Id": 5,
+		"College_Name": "IIITDM Jabalpur",
+		"Skills": [ "Management", "Java","Oratory skills"],
+		"_v": 0
+	},
+    {
+        "StudentId": 32,
+		"Name": "Vishwajeeth",
+		"Year_batch": "2013",
+		"College_Id": 5,
+		"College_Name": "IIITDM Jabalpur",
+		"Skills": ["Gaming", "Management","Oratory skills"],
+		"_v": 0
+	},
+    {
+        "StudentId": 33,
+		"Name": "Arpit",
+		"Year_batch": "2018",
+		"College_Id": 5,
+		"College_Name": "IIITDM Jabalpur",
+		"Skills": ["Leadership", "Management", "Java","Oratory skills"],
+		"_v": 0
+	},
+    {
+        "StudentId": 34,
+		"Name": "Naveen",
+		"Year_batch": "2011",
+		"College_Id": 5,
+		"College_Name": "IIITDM Jabalpur",
+		"Skills": ["Acting", "Management", "Java","Oratory skills"],
+		"_v": 0
+	},
+    {
+        "StudentId": 35,
+		"Name": "Polyshetty",
+		"Year_batch": "2012",
+		"College_Id": 5,
+		"College_Name": "IIITDM Jabalpur",
+		"Skills": ["Sports", "Acting", "Java","Oratory skills"],
+		"_v": 0
+	},
+    {
+        "StudentId": 36,
+		"Name": "Priyadarshi",
+		"Year_batch": "2010",
+		"College_Id": 6,
+		"College_Name": "IIITDM Kancheepuram",
+		"Skills": ["Gaming", "Management", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 37,
+		"Name": "Rahul",
+		"Year_batch": "2010",
+		"College_Id": 6,
+		"College_Name": "IIITDM Kancheepuram",
+		"Skills": ["Gaming", "Management", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 38,
+		"Name": "Ramakrishna",
+		"Year_batch": "2013",
+		"College_Id": 6,
+		"College_Name": "IIITDM Kancheepuram",
+		"Skills": ["C++", "Management", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 39,
+		"Name": "Keerthi",
+		"Year_batch": "2017",
+		"College_Id": 6,
+		"College_Name": "IIITDM Kancheepuram",
+		"Skills": ["Sports", "Management", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 40,
+		"Name": "Suresh",
+		"Year_batch": "2010",
+		"College_Id": 6,
+		"College_Name": "IIITDM Kancheepuram",
+		"Skills": ["Water Painting", "Management", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 41,
+		"Name": "Suresh",
+		"Year_batch": "2010",
+		"College_Id": 7,
+		"College_Name": "IIT Madras",
+		"Skills": ["Water Painting", "Management", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 42,
+		"Name": "Reyansh",
+		"Year_batch": "2020",
+		"College_Id": 7,
+		"College_Name": "IIT Madras",
+		"Skills": ["Water Painting", "Art", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 43,
+		"Name": "Krithi",
+		"Year_batch": "2021",
+		"College_Id": 7,
+		"College_Name": "IIT Madras",
+		"Skills": ["Leadership", "Management", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 44,
+		"Name": "Arjun",
+		"Year_batch": "2016",
+		"College_Id": 7,
+		"College_Name": "IIT Madras",
+		"Skills": ["C++", "Python", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 45,
+		"Name": "Sherin",
+		"Year_batch": "2016",
+		"College_Id": 7,
+		"College_Name": "IIT Madras",
+		"Skills": ["Jvascript", "Management", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 46,
+		"Name": "Amar",
+		"Year_batch": "2015",
+		"College_Id": 7,
+		"College_Name": "IIT Madras",
+		"Skills": ["Sports", "Leadership", "Python"],
+		"_v": 0
+	},
+    {
+        "StudentId": 47,
+		"Name": "Raju",
+		"Year_batch": "2016",
+		"College_Id": 7,
+		"College_Name": "IIT Madras",
+		"Skills": ["Dance", "Management", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 48,
+		"Name": "Shyam",
+		"Year_batch": "2014",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Sports", "C++", "Java"],
+		"_v": 0
+	},
+    {
+        "StudentId": 49,
+		"Name": "Nishidha",
+		"Year_batch": "2017",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Web Development", "Sports", "Javascript","User Interface"],
+		"_v": 0
+	},
+    {
+        "StudentId": 50,
+		"Name": "Santosh",
+		"Year_batch": "2018",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Sports", "C++"],
+		"_v": 0
+	},
+	{
+        "StudentId": 51,
+		"Name": "Akhil",
+		"Year_batch": "2012",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Sports", "C++","Gymnastics"],
+		"_v": 0
+	},
+	{
+        "StudentId": 52,
+		"Name": "Bhargav",
+		"Year_batch": "2018",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Sports", "C++","Javascript"],
+		"_v": 0
+	},
+	{
+        "StudentId": 53,
+		"Name": "Deepthi",
+		"Year_batch": "2008",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Python","Sports", "C++"],
+		"_v": 0
+	},
+	{
+        "StudentId": 54,
+		"Name": "Lohitha",
+		"Year_batch": "2016",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Sports", "C++","Leadership"],
+		"_v": 0
+	},
+	{
+        "StudentId": 55,
+		"Name": "Teja",
+		"Year_batch": "2019",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Sports", "C++","Management"],
+		"_v": 0
+	},
+	{
+        "StudentId": 56,
+		"Name": "Bhanu",
+		"Year_batch": "2020",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Sports", "C++","Acting"],
+		"_v": 0
+	},
+	{
+        "StudentId": 57,
+		"Name": "Prasad",
+		"Year_batch": "2014",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Sports", "C++","Oratory skills"],
+		"_v": 0
+	},
+	{
+        "StudentId": 58,
+		"Name": "Pramod",
+		"Year_batch": "2017",
+		"College_Id": 8,
+		"College_Name": "IIT Hyderabad",
+		"Skills": ["Acting", "C++"],
+		"_v": 0
+	},
+	{
+        "StudentId": 59,
+		"Name": "Ajay",
+		"Year_batch": "2011",
+		"College_Id": 9,
+		"College_Name": "IIT Bombay",
+		"Skills": ["Sports", "C++"],
+		"_v": 0
+	},
+	{
+        "StudentId": 60,
+		"Name": "Ayush",
+		"Year_batch": "2015",
+		"College_Id": 9,
+		"College_Name": "IIT Bombay",
+		"Skills": ["Sports", "C++","Singing"],
+		"_v": 0
+	},
+	{
+        "StudentId": 61,
+		"Name": "Maurya",
+		"Year_batch": "2013",
+		"College_Id": 9,
+		"College_Name": "IIT Bombay",
+		"Skills": ["Sports", "Java"],
+		"_v": 0
+	},
+	{
+        "StudentId": 62,
+		"Name": "Sushil",
+		"Year_batch": "2010",
+		"College_Id": 9,
+		"College_Name": "IIT Bombay",
+		"Skills": ["Sports", "C++","Javascript"],
+		"_v": 0
+	},
+	{
+        "StudentId": 63,
+		"Name": "Aditya",
+		"Year_batch": "2010",
+		"College_Id": 9,
+		"College_Name": "IIT Bombay",
+		"Skills": ["Singing", "C++"],
+		"_v": 0
+	},
+	{
+        "StudentId": 64,
+		"Name": "Shankar",
+		"Year_batch": "2015",
+		"College_Id": 9,
+		"College_Name": "IIT Bombay",
+		"Skills": ["Sports", "C++","Python"],
+		"_v": 0
+	},
+	{
+        "StudentId": 65,
+		"Name": "Mishra",
+		"Year_batch": "2020",
+		"College_Id": 9,
+		"College_Name": "IIT Bombay",
+		"Skills": ["Sports", "C++","Machine Learning"],
+		"_v": 0
+	},
+	{
+        "StudentId": 66,
+		"Name": "Chikleet",
+		"Year_batch": "2016",
+		"College_Id": 9,
+		"College_Name": "IIT Bombay",
+		"Skills": ["Sports", "C++","Management"],
+		"_v": 0
+	},
+	{
+        "StudentId": 67,
+		"Name": "Karthik",
+		"Year_batch": "2001",
+		"College_Id": 9,
+		"College_Name": "IIT Bombay",
+		"Skills": ["Sports", "C++","Gaming"],
+		"_v": 0
+	},
+	{
+        "StudentId": 69,
+		"Name": "Puneeth",
+		"Year_batch": "2012",
+		"College_Id": 10,
+		"College_Name": "IIT Kharagpur",
+		"Skills": ["Game Development", "C++","Javascript"],
+		"_v": 0
+	}
+    
+]

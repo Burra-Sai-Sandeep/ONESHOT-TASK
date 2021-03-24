@@ -98,9 +98,7 @@ class Institutes extends Component {
 							}}
 							style={{ cursor: "pointer", width: "70%", margin: "40px auto" }}
 							lineWidth={50}
-							label={({ dataEntry }) =>
-								dataEntry.value >= 5 ? `${Math.round(dataEntry.value)} %` : ""
-							}
+							label={({ dataEntry }) => `${Math.round(dataEntry.value)} %`}
 							labelPosition={75}
 							labelStyle={{
 								fontSize: window.innerWidth > 500 ? "0.3vw" : "1vw",
@@ -121,7 +119,7 @@ class Institutes extends Component {
 							style={{ cursor: "pointer", width: "60%", margin: "40px auto" }}
 							lineWidth={50}
 							label={({ dataEntry }) =>
-								dataEntry.value >= 5 ? `${Math.round(dataEntry.value)} %` : ""
+								dataEntry.value >= 10 ? `${Math.round(dataEntry.value)} %` : ""
 							}
 							labelPosition={75}
 							labelStyle={{

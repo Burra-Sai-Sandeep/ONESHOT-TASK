@@ -1,16 +1,13 @@
 const College = require("../Models/College");
 const Student = require("../Models/Student");
+const StudentData = require("../StudentData.json");
 exports.create = async (req, res) => {
 	try {
-		const newStudent = Student({
-			StudentId: 2,
-			Name: "Upendra",
-			Year_batch: "2017",
-			College_Id: 3,
-			College_Name: "ABV-IIITM",
-			Skills: ["Management", "Leadership", "Python", "Bussiness Analyst"],
-		});
-		const check = await newStudent.save();
+		let check;
+		for (let index = 0; index < StudentData.length; index++) {
+			const newStudent = Student(StudentData[index]);
+			check = await newStudent.save();
+		}
 		return res.status(200).json(check);
 	} catch (error) {
 		console.log(error.message);

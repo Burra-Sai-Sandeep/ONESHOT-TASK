@@ -1,10 +1,14 @@
 const College = require("../Models/College");
 const { sortByCountry } = require("../Helpers/Sorts");
 const data = require("../data.json");
+const { create } = require("./Student");
 exports.create = async (req, res) => {
 	try {
-		const newCollege = College(data[0]);
-		const check = await newCollege.save();
+		let check;
+		for (let index = 0; index < data.length; index++) {
+			const newCollege = College(data[index]);
+			check = await newCollege.save();
+		}
 		return res.status(200).json(check);
 	} catch (error) {
 		console.log(error.message);
@@ -73,7 +77,7 @@ exports.filterBystate = async (req, res) => {
 			if (states[ele.State] === undefined) states[ele.State] = [ele];
 			else states[ele.State].push(ele);
 		});
-		const total = Object.entries(states).length;
+		const total = colleges.length;
 		for (let key in states) {
 			ans.push({
 				title: key,
